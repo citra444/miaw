@@ -507,7 +507,9 @@
       entered = entered.slice(0,-1);
       renderDots();
     }
-  });  // ---- Scroll-triggered reveal animation (replays on scroll up/down) ----
+  });
+
+  // ---- Scroll-triggered reveal animation (replays on scroll up/down) ----
   const revealEls = document.querySelectorAll('.reveal');
   const revealObserver = new IntersectionObserver((entries)=>{
     entries.forEach(entry=>{
