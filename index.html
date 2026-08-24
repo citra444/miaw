@@ -493,7 +493,7 @@
     }
   });
 
-  // Optional: allow physical keyboard too
+   // Optional: allow physical keyboard too
   window.addEventListener('keydown', (e)=>{
     if(lock.classList.contains('hidden')) return;
     if(/^[0-9]$/.test(e.key)){
